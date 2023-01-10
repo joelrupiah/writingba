@@ -1,3 +1,21 @@
-.Header {
-	background-color: blue;
+.header-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 160px 24px 160px;
+	gap: 615px;
+	height: 96px;
+	left: 160px;
+	right: 0px;
+	top: 0px;
+	border-radius: 0px;
+}
+
+.header-logo img {
+	height: 37.94px;
+	width: 187px;
+	left: 29.03125px;
+	top: 5.03125px;
+	border-radius: 0px;
 }

@@ -4,7 +4,13 @@ import './Header.css'
 const Header = () => {
 	return (
 		<div className="Header">
-			Header
+
+			<div className="header-content">
+				<div className="header-logo">
+					<img src="/WritingBA-Main-Logo.png" alt="Logo" />
+				</div>
+			</div>
+			
 		</div>
 	)
 }
