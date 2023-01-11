@@ -20,18 +20,7 @@
 					<button className="subscribe-button">
 						Subscribe
 					</button>
- 				{/*<p className="subscribe-placeholder">
- 					Enter email address
- 				</p>
- 				<button className="subscribe-button">Subscribe</button>*/}
  			</div>
-
- 			{/*<div className="course-search">
-					<input className="search-input" type="text" placeholder="Search for a course..." />
-					<button className="search-button">
-						<i class="fa-sharp fa-solid fa-magnifying-glass"></i>Search
-					</button>
-				</div>*/}
 
  		</div>
  	)

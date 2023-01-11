@@ -103,3 +103,26 @@
 .subscribe-input {
 	background: #F8F8F8;
 }
+
+input {
+  flex-grow:2;
+  border:none;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder{
+	width: 193px;
+	height: 24px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 24px;
+	color: #0D1259;
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+}
