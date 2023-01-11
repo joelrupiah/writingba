@@ -3,14 +3,13 @@ import './Hero.css'
 
 const Hero = () => {
 	return (
-		<div className="Hero">
+		<div className="hero-content">
 
 			<div className="header-logo">
 				<img src="/WritingBA-Main-Logo.png" alt="main logo" />
 			</div>
-
+			
 			<div className="hero-title-description">
-
 				<div className="title-description">
 					<div className="title">
 						Prep for your TOEFL Exam with <span className="title-head">WritingBA</span>
@@ -20,18 +19,17 @@ const Hero = () => {
 					</div>
 				</div>
 
-				<div className="hero-button-section">
-					<div className="hero-button">
-						Sign Up for 8500 naira only
-					</div>
+				<div className="course-search">
+					<input className="search-input" type="text" placeholder="Search for a course..." />
+					<button className="search-button">
+						<i class="fa-sharp fa-solid fa-magnifying-glass"></i>Search
+					</button>
 				</div>
 
 			</div>
 
-			<div className="hero-tag">
-				<img className="hero-image" src="Heroimage-removebg.png" alt="hero tag" /> 
-				<img className="orange-ellipse" src="orange-ellipse.png" alt="orange ellipse" />
-				<img className="blue-ellipse" src="blue-ellipse.png" alt="blue ellipse" />
+			<div className="hero-image">
+				<img src="Heroimage-removebg.png" alt="hero tag" /> 
 			</div>
 
 		</div>

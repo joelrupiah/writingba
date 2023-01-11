@@ -4,32 +4,40 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 const Footer = () => {
 	return (
 		<div className="Footer">
+
 			<div className="footer-content">
+
 				<div className="footer-logo">
 					<img src="/WritingBA-Main-Logo.png" alt="Footer logo" />
 				</div>
 				<div className="footer-copyright">
-					<span className="copywright-tag">&copy;</span> 
-					<span className="copywright-name">Copyright writingba 2023</span>
+					<span className="copyright-tag ">&copy;</span> 
+					<span className="copywright-name">Copyright writingBA 2023</span>
 				</div>
+
 				<div className="footer-social-links">
 
 					<div className="social-div">
-						<span className="footer-facebook">
-							<FacebookIcon />
-						</span>
-					</div>
-					
-					<span className="footer-instagram">
-						{/*<InstagramOutlinedIcon />*/}
-					</span>
 
-					<span className="footer-twitter">
-						{/*<TwitterOutlinedIcon />*/}
-					</span>
+						<span className="footer-social-icons">
+							<img src="/facebook.png" alt="social icon" />
+						</span>
+
+						<span className="footer-social-icons">
+							<img src="/instagram.png" alt="social icon" />
+						</span>
+
+						<span className="footer-social-icons">
+							<img src="/twitter.png" alt="social icon" />
+						</span>
+
+
+					</div>
 
 				</div>
+
 			</div>
+
 		</div>
 	)
 }
