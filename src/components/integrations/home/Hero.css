@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 .Hero {
 /*	width: 1440px;*/
 	width: 100%;
@@ -53,13 +55,13 @@
 }
 
 .title {
-	width: 515px;
-	height: 192px;
+	width: 380px;
+/*	height: 192px;*/
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 46px;
-	line-height: 64px;
+	font-size: 40px;
+	line-height: 50px;
 	color: #0D1259;
 	flex: none;
 	order: 0;
@@ -99,6 +101,7 @@
 	height: 48px;
 	background: #515AE5;
 	border-radius: 5px;
+	margin-top: -30px;
 	flex: none;
 	order: 1;
 	flex-grow: 0;
@@ -128,9 +131,10 @@
 
 .hero-image {
 	position: absolute;
-	width: 393.33px;
+	width: 420px;
+/*	width: 393.33px;*/
 	height: 590px;
-	left: 154px;
+	left: 104px;
 	top: -8px;
 	z-index: 1;
 }
@@ -142,6 +146,7 @@
 	left: 31px;
 	top: 74px;
 /*	background: #F7D74E;*/
+/*	color: #eee0a5;*/
 	color: #F7D74E;
 	opacity: 0.5;
 }

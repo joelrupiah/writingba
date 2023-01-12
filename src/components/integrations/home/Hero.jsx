@@ -6,7 +6,7 @@ const Hero = () => {
 		<div className="Hero">
 
 			<div className="header-logo">
-				<img src="/WritingBA-Main-Logo.png" alt="main logo" />
+				<img src="main-logo.png" alt="main logo" />
 			</div>
 
 			<div className="hero-title-description">
@@ -29,7 +29,7 @@ const Hero = () => {
 			</div>
 
 			<div className="hero-tag">
-				<img className="hero-image" src="Heroimage-removebg.png" alt="hero tag" /> 
+				<img className="hero-image" src="main-hero-image.png" alt="hero tag" /> 
 				<img className="orange-ellipse" src="orange-ellipse.png" alt="orange ellipse" />
 				<img className="blue-ellipse" src="blue-ellipse.png" alt="blue ellipse" />
 			</div>

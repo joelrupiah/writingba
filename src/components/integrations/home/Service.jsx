@@ -18,7 +18,7 @@ const Service = () => {
 
 				<div className="service-detail-content">
 					<div className="service-detail-icon">
-						<i class="fa-solid fa-video"></i>
+						<img className="service-detail-image" src="videos.png" alt="quality videos icon" />
 					</div>
 
 					<div className="service-title-description-section">
@@ -34,25 +34,29 @@ const Service = () => {
 
 				<div className="service-detail-content">
 					<div className="service-detail-icon">
-						<i class="fa-solid fa-star"></i>
+						<img className="service-detail-image" src="strategies.png" alt="strategies icon" />
 					</div>
-					<div className="service-detail-title">
-						Top-Notch Scoring Strategies
-					</div>
-					<div className="service-detail-description">
-						Your instructor provides well-researched strategies to help you get a competitive score on your TOEFL Exam.
+					<div className="service-title-description-section">
+						<div className="service-detail-title">
+							Top-Notch Scoring Strategies
+						</div>
+						<div className="service-detail-description">
+							Your instructor provides well-researched strategies to help you get a competitive score on your TOEFL Exam.
+						</div>
 					</div>
 				</div>
 
 				<div className="service-detail-content">
 					<div className="service-detail-icon">
-						<i class="fa-solid fa-thumbs-up"></i>
+						<img className="service-detail-image" src="like.png" alt="educator icon" />
 					</div>
-					<div className="service-detail-title">
-						Exceptional Educator
-					</div>
-					<div className="service-detail-description">
-						Your instructor is a TOEFL Expert and has 9 years experience teaching it.
+					<div className="service-title-description-section">
+						<div className="service-detail-title">
+							Exceptional Educator
+						</div>
+						<div className="service-detail-description">
+							Your instructor is a TOEFL Expert and has 9 years experience teaching it.
+						</div>
 					</div>
 				</div>
 

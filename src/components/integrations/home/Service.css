@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 .service-section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 56px 160px;
 	gap: 56px;
+/*	width: 1440px;*/
 	height: 542.05px;
 	background: #FFFFFF;
 	flex: none;
 	order: 2;
 	flex-grow: 0;
 	margin: -1px 0px;
+
 }
 
 .service-title-description {
@@ -84,9 +88,16 @@
 }
 
 .service-detail-icon {
-	width: 80px;
+	/*width: 80px;
 	color: #515AE5;
 	font-size: 50px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;*/
+	width: 80px;
+	height: 78.05px;
+	background: #515AE5;
+	border-radius: 9999px;
 	flex: none;
 	order: 0;
 	flex-grow: 0;

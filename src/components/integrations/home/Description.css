@@ -1,10 +1,13 @@
-.description-data{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.description-section {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: flex-start;
-	padding: 10px 80px 30px 80px;
-	height: 100px;
+	flex-direction: column;
+	align-items: center;
+	padding: 24px 160px;
+	gap: 24px;
+/*	width: 1440px;*/
+	height: 335px;
 	background: #515AE5;
 	flex: none;
 	order: 1;
@@ -13,16 +16,76 @@
 }
 
 .description-text {
+	width: 955px;
 	height: 96px;
-	width: 600px;
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 36px;
 	line-height: 48px;
 	text-align: center;
 	color: #FFFFFF;
 	flex: none;
 	order: 0;
 	flex-grow: 0;
+/*	margin-bottom: -10px;*/
+}
+
+.description-section-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 10px;
+	width: 547px;
+	height: 160px;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+.single-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 16px;
+	width: 547px;
+	height: 24px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+/*.material-icon {
+	width: 24px;
+	height: 24px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.vector-icon {
+	position: absolute;
+	left: 8.33%;
+	right: 8.33%;
+	top: 20.83%;
+	bottom: 20.83%;
+	background: #FFFFFF;
+}
+*/
+.single-content-text {
+	width: 507px;
+	height: 24px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 24px;
+	text-align: left;
+	color: #FFFFFF;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin-bottom: -10px;
 }
