@@ -7,7 +7,7 @@
 	padding: 24px 160px;
 	gap: 24px;
 /*	width: 1440px;*/
-	height: 335px;
+	height: 310px;
 	background: #515AE5;
 	flex: none;
 	order: 1;
@@ -16,14 +16,15 @@
 }
 
 .description-text {
-	width: 955px;
+	width: 800px;
 	height: 96px;
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 30px;
 	line-height: 48px;
 	text-align: center;
+	margin-bottom: -20px;
 	color: #FFFFFF;
 	flex: none;
 	order: 0;
@@ -44,9 +45,25 @@
 	flex-grow: 0;
 }
 
+.single-content-icon-text {
+	width: 550px;
+	height: 24px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: left;
+	color: #FFFFFF;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin-bottom: -10px;
+}
+
 .single-content {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	padding: 0px;
 	gap: 16px;
@@ -57,7 +74,9 @@
 	flex-grow: 0;
 }
 
-/*.material-icon {
+/*.single-description-content {}*/
+
+/*.single-content-icon {
 	width: 24px;
 	height: 24px;
 	flex: none;
@@ -65,27 +84,9 @@
 	flex-grow: 0;
 }
 
-.vector-icon {
-	position: absolute;
+.single-icon {
 	left: 8.33%;
 	right: 8.33%;
 	top: 20.83%;
 	bottom: 20.83%;
-	background: #FFFFFF;
-}
-*/
-.single-content-text {
-	width: 507px;
-	height: 24px;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 24px;
-	text-align: left;
-	color: #FFFFFF;
-	flex: none;
-	order: 1;
-	flex-grow: 0;
-	margin-bottom: -10px;
-}
+}*/

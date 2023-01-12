@@ -35,7 +35,7 @@
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 30px;
 	line-height: 48px;
 	text-align: center;
 	color: #0D1259;
@@ -117,7 +117,7 @@
 }
 
 .service-detail-title {
-	width: 222px;
+	width: 200px;
 	height: 80px;
 	font-family: 'Poppins';
 	font-style: normal;
@@ -132,7 +132,7 @@
 }
 
 .service-detail-description {
-	width: 230px;
+	width: 270px;
 	height: 72px;
 	font-family: 'Poppins';
 	font-style: normal;

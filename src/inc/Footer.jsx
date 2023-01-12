@@ -1,6 +1,5 @@
 import React from 'react'
 import './Footer.css'
-import FacebookIcon from '@mui/icons-material/Facebook';
 const Footer = () => {
 	return (
 		<div className="Footer">
