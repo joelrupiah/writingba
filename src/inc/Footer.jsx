@@ -18,18 +18,19 @@ const Footer = () => {
 
 					<div className="social-div">
 
-						<span className="footer-social-icons">
+						{/*<span className="footer-social-icons">
 							<img src="/facebook.png" alt="social icon" />
 						</span>
 
 						<span className="footer-social-icons">
 							<img src="/instagram.png" alt="social icon" />
-						</span>
+						</span>*/}
 
-						<span className="footer-social-icons">
-							<img src="/twitter.png" alt="social icon" />
-						</span>
-
+						<a href="https://twitter.com/writing_ba" target="_blank">
+							<span className="footer-social-icons">
+								<img src="/twitter.png" alt="social icon" />
+							</span>
+						</a>
 
 					</div>
 
