@@ -101,7 +101,65 @@
 	top: 8px;
 	color: #FFFFFF;
 	font-weight: bolder;
+	transition: all 0.4s ease;
+/*	transform: translate(-50%, -50%);*/
 }
+
+/*.subscribe-button:active {
+	background: red;
+	border: 5px solid red;
+}*/
+
+.subscribe-button:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/*.subscribe-button:hover {
+	animation: effect 0.8s normal;
+}
+
+@keyframes effect {
+	0% {
+    	transform: translateX(0px) rotate(0deg);
+	}
+  
+	20% {
+    	transform: translateX(-4px) rotate(-4deg);
+	}
+  
+  40% {
+      transform: translateX(-2px) rotate(-2deg);
+  }
+  
+  60% {
+      transform: translateX(4px) rotate(4deg);
+  }
+  
+  80% {
+      transform: translateX(2px) rotate(2deg);
+  }
+  
+  100% {
+      transform: translateX(0px) rotate(0deg);
+  }
+}*/
 
 .subscribe-input {
 	background: #F8F8F8;
