@@ -3,7 +3,7 @@ import './Description.css'
 
 const Description = () => {
 	return (
-		<div className="description-section">
+		<div className="description-section" data-aos="zoom-in">
 			<p className="description-text">
 				Let WritingBA be your resource to pass the TOEFL with a high score.
 			</p>
