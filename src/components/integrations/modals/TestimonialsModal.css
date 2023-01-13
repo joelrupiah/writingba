@@ -1,0 +1,95 @@
+.modal-backdrop {
+/*  position: absolute;*/
+  top: 0;
+  left: 0;
+/*  background: #F5F5F5;*/
+  background: transparent;
+/*  opacity: 0.1;*/
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-modal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 24px;
+/*	position: relative;*/
+/*  width: 20px;*/
+/*  height: 20px;*/
+	width: 450px;
+	height: 416px;
+	background: #F8F8F8;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+	border-radius: 16px;
+}
+
+.testimonials-content {
+	width: 400px;
+	height: 240px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 24px;
+	color: #0D1259;
+	flex: none;
+	order: 2;
+	align-self: stretch;
+	flex-grow: 0;
+}
+
+.modal-avatar-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  width: 302px;
+  height: 48px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.modal-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.modal-name {
+/*  width: 150px;*/
+  height: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #0D1259;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.modal-ratings {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  width: 176px;
+  height: 32px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}

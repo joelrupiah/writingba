@@ -114,10 +114,10 @@
 	align-items: center;
 	padding: 0px;
 	gap: 8px;
-	width: 84px;
+/*	width: 84px;*/
 	height: 84px;
 	flex: none;
-	order: 1;
+	order: 0;
 	flex-grow: 0;
 }
 
@@ -131,7 +131,10 @@
 	gap: 10px;
 	width: 44px;
 	height: 44px;
-	background: #515AE5;
+	/*padding: 16px;
+	gap: 10px;
+	width: 64px;
+	height: 64px;*/
 	border: 1px solid #1090D2;
 	border-radius: 9999px;
 	flex: none;
@@ -248,4 +251,15 @@
 	align-self: stretch;
 	flex-grow: 0;
 	text-align: left;
+}
+
+.read-more {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 24px;
+	text-decoration: underline;
+	cursor: pointer;
+	color: #1090D2;
 }

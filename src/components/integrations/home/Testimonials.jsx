@@ -1,9 +1,67 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Testimonials.css'
-// import customers from '../../../repository/slider.js'
+import customers from '../../../repository/slider.js'
+
+import TestimonialsModal from '../modals/TestimonialsModal'
 
 const Testimonials = () => {
 
+	const [data, setData] = useState(null);
+	const [visible, setVisible] = useState(false);
+
+  	const toggleItem = (customer = null) => {
+    	setData(customer);
+    	setVisible(customer !== null);
+  	};
+
+  	// function to trim description to prevent word breaks
+
+  	// function trimDownToWord(string, maxLength) {
+	//   if (string <= maxLength) {
+	//     return string;
+	//   }
+
+	//   let first = string.toString().substr(0, maxLength);
+	//   const second = string.toString().substr(maxLength);
+
+	//   if (/\w$/.test(first) && /^\w/.test(second)) {
+	//     first = first.replace(/\b[^\w]*\w+$/, '');
+	//   }
+
+	//   return first.trim() + '...';
+	// }
+
+	// const [openModal, setOpenModal] = useState(false)
+	// const [customers, setCustomers] = useState([
+	// 	{
+	// 		id: 1,
+	// 		name: 'Joel Rupiah',
+	// 		image: '/Avatar-one.png',
+	// 		description: 'I have worked with many educators, but very few who are as encouraging thorough.',
+	// 		rating: 5
+	// 	},
+	// 	{
+	// 		id: 2,
+	// 		name: 'Joel Jeremiah Rupiah',
+	// 		image: '/Avatar-two.png',
+	// 		description: 'I have worked with many educators, but very few who are as encouraging thorough.',
+	// 		rating: 4
+	// 	},
+	// 	{
+	// 		id: 3,
+	// 		name: 'Joel Rupiah One',
+	// 		image: '/Avatar-one.png',
+	// 		description: 'I have worked with many educators, but very few who are as encouraging thorough.',
+	// 		rating: 5
+	// 	},
+	// 	{
+	// 		id: 4,
+	// 		name: 'Joel Jeremiah Rupiah One',
+	// 		image: '/Avatar-two.png',
+	// 		description: 'I have worked with many educators, but very few who are as encouraging thorough.',
+	// 		rating: 4
+	// 	},
+	// ])
 	
 
 	const btnpressprev = () => {
@@ -34,165 +92,75 @@ const Testimonials = () => {
   	// };
 
 	return (
-		<div className="testimonials-section">
+		<>
+			<div className="testimonials-section">
 
-			<div className="testimonials-title-description">
-				<div className="testimonials-title">
-					Our Testimonials
-				</div>
-				<div className="testimonials-description">
-					See what our students are saying about us
-				</div>
-			</div>
-
-			<div className="testimonials-controls">
-				<div className="testimonials-left-section">
-					<div className="testimonials-left-control" onClick={btnpressprev}>
-						<img src="left-chevron.png" alt="left control icon" />
+				<div className="testimonials-title-description">
+					<div className="testimonials-title">
+						Our Testimonials
 					</div>
-				</div>
-				<div className="testimonials-right-section">
-					<div className="testimonials-right-control" onClick={btnpressnext}>
-						<img src="right-chevron.png" alt="right control icon" />
-					</div>
-				</div>
-			</div>
-
-			<div className="container">
-				<div className="testimonials-main-content">
-
-				<div className="single-testimonial">
-					<div className="testimonial-avatar-name">
-						<img className="customer-avatar" src="Avatar-one.png" alt="customer avatar" />
-						<span className="customer-name">
-							Charlie Warren
-						</span>
-					</div>
-					<div className="testimonial-star-bulk">
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-					</div>
-					<div className="single-testimonial-description">
-						I've worked with many educators, but very few who are as encouraging, 
-						thorough, and as passionate as Mike. 
-						He enters every tutoring session seemingly excited Read more
+					<div className="testimonials-description">
+						See what our students are saying about us
 					</div>
 				</div>
 
-				<div className="single-testimonial">
-					<div className="testimonial-avatar-name">
-						<img className="customer-avatar" src="Avatar-one.png" alt="customer avatar" />
-						<span className="customer-name">
-							Charlie Warren
-						</span>
+				{/*{customers.map ((item) => <img src={item.image} alt="yes" /> )}*/}
+
+				<div className="testimonials-controls">
+					<div className="testimonials-left-section">
+						<div className="testimonials-left-control" onClick={btnpressprev}>
+							<img src="left-chevron.png" alt="left control icon" />
+						</div>
 					</div>
-					<div className="testimonial-star-bulk">
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-					</div>
-					<div className="single-testimonial-description">
-						I've worked with many educators, but very few who are as encouraging, 
-						thorough, and as passionate as Mike. 
-						He enters every tutoring session seemingly excited Read more
+					<div className="testimonials-right-section">
+						<div className="testimonials-right-control" onClick={btnpressnext}>
+							<img src="right-chevron.png" alt="right control icon" />
+						</div>
 					</div>
 				</div>
 
-				<div className="single-testimonial">
-					<div className="testimonial-avatar-name">
-						<img className="customer-avatar" src="Avatar-one.png" alt="customer avatar" />
-						<span className="customer-name">
-							Charlie Warren
-						</span>
-					</div>
-					<div className="testimonial-star-bulk">
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-					</div>
-					<div className="single-testimonial-description">
-						I've worked with many educators, but very few who are as encouraging, 
-						thorough, and as passionate as Mike. 
-						He enters every tutoring session seemingly excited Read more
-					</div>
-				</div>
+				<div className="container">
+					<div className="testimonials-main-content">
 
-				<div className="single-testimonial">
-					<div className="testimonial-avatar-name">
-						<img className="customer-avatar" src="Avatar-one.png" alt="customer avatar" />
-						<span className="customer-name">
-							Charlie Warren
-						</span>
-					</div>
-					<div className="testimonial-star-bulk">
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-					</div>
-					<div className="single-testimonial-description">
-						I've worked with many educators, but very few who are as encouraging, 
-						thorough, and as passionate as Mike. 
-						He enters every tutoring session seemingly excited Read more
-					</div>
-				</div>
 
-				<div className="single-testimonial">
-					<div className="testimonial-avatar-name">
-						<img className="customer-avatar" src="Avatar-one.png" alt="customer avatar" />
-						<span className="customer-name">
-							Charlie Warren
-						</span>
-					</div>
-					<div className="testimonial-star-bulk">
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-					</div>
-					<div className="single-testimonial-description">
-						I've worked with many educators, but very few who are as encouraging, 
-						thorough, and as passionate as Mike. 
-						He enters every tutoring session seemingly excited Read more
-					</div>
-				</div>
+				{/*{customers.map ((item) => <img src={item.image} alt="yes" /> )}*/}
 
-				<div className="single-testimonial">
-					<div className="testimonial-avatar-name">
-						<img className="customer-avatar" src="Avatar-one.png" alt="customer avatar" />
-						<span className="customer-name">
-							Charlie Warren
-						</span>
-					</div>
-					<div className="testimonial-star-bulk">
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-						<img src="star.png" className="testimonial-star" alt="testimonial star" />
-					</div>
-					<div className="single-testimonial-description">
-						I've worked with many educators, but very few who are as encouraging, 
-						thorough, and as passionate as Mike. 
-						He enters every tutoring session seemingly excited Read more
-					</div>
+					{customers.map ((customer) => 
+
+						<div className="single-testimonial" key={customer.id}>
+							<div className="testimonial-avatar-name">
+								<img className="customer-avatar" src={customer.image} alt="customer avatar" />
+								<span className="customer-name">
+									{customer.name}
+								</span>
+							</div>
+							<div className="testimonial-star-bulk">
+								<img src="star.png" className="testimonial-star" alt="testimonial star" />
+								<img src="star.png" className="testimonial-star" alt="testimonial star" />
+								<img src="star.png" className="testimonial-star" alt="testimonial star" />
+								<img src="star.png" className="testimonial-star" alt="testimonial star" />
+								<img src="star.png" className="testimonial-star" alt="testimonial star" />
+							</div>
+							<div className="single-testimonial-description">
+								{customer.description.substring(0, 160).substring(0, customer.description.substring(0, 160).lastIndexOf(' ')) + '...   '}
+								<span className="read-more" onClick={() => toggleItem(customer)}>Read more</span>
+							</div>
+
+							{visible === true && data !== null && (
+				              <TestimonialsModal data={data} closeModal={() => toggleItem()} />
+				            )}
+
+						</div>	
+
+						)}
+
+					</div>				
+
 				</div>
 
 			</div>
-			</div>
 
-			
-
-		</div>
+		</>
 	)
 }
 
