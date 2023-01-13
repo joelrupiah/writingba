@@ -122,7 +122,7 @@ const Testimonials = () => {
 				<div className="container" 
 					data-aos="fade-zoom-in"
 					data-aos-easing="ease-in-back"
-				    data-aos-delay="300"
+				    data-aos-delay="100"
 				    data-aos-offset="0">
 
 					<div className="testimonials-main-content">
