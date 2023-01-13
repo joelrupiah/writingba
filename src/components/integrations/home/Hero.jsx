@@ -11,7 +11,7 @@ const Hero = () => {
 
 			<div className="hero-title-description">
 
-				<div className="title-description">
+				<div className="title-description" data-aos="fade-right">
 					<div className="title">
 						Prep for your TOEFL Exam with <span className="title-head">WritingBA</span>
 					</div>
@@ -20,7 +20,7 @@ const Hero = () => {
 					</div>
 				</div>
 
-				<div className="hero-button-section">
+				<div className="hero-button-section" data-aos="fade-up-right">
 					<div className="hero-button">
 						Sign Up for 8500 naira only
 					</div>
@@ -28,7 +28,7 @@ const Hero = () => {
 
 			</div>
 
-			<div className="hero-tag">
+			<div className="hero-tag" data-aos="zoom-in-left">
 				<img className="hero-image" src="main-hero-image.png" alt="hero tag" /> 
 				<img className="orange-ellipse" src="orange-ellipse.png" alt="orange ellipse" />
 				<img className="blue-ellipse" src="blue-ellipse.png" alt="blue ellipse" />

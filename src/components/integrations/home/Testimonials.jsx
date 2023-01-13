@@ -95,18 +95,18 @@ const Testimonials = () => {
 		<>
 			<div className="testimonials-section">
 
-				<div className="testimonials-title-description">
+				<div className="testimonials-title-description" data-aos="fade-right">
 					<div className="testimonials-title">
 						Our Testimonials
 					</div>
-					<div className="testimonials-description">
+					<div className="testimonials-description" data-aos="fade-right">
 						See what our students are saying about us
 					</div>
 				</div>
 
 				{/*{customers.map ((item) => <img src={item.image} alt="yes" /> )}*/}
 
-				<div className="testimonials-controls">
+				<div className="testimonials-controls" data-aos="fade-right">
 					<div className="testimonials-left-section">
 						<div className="testimonials-left-control" onClick={btnpressprev}>
 							<img src="left-chevron.png" alt="left control icon" />
@@ -119,11 +119,16 @@ const Testimonials = () => {
 					</div>
 				</div>
 
-				<div className="container">
+				<div className="container" 
+					data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+				    data-aos-delay="300"
+				    data-aos-offset="0">
+
 					<div className="testimonials-main-content">
 
 
-				{/*{customers.map ((item) => <img src={item.image} alt="yes" /> )}*/}
+					{/*{customers.map ((item) => <img src={item.image} alt="yes" /> )}*/}
 
 					{customers.map ((customer) => 
 
