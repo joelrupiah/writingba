@@ -30,8 +30,10 @@ const Hero = () => {
 
 			<div className="hero-tag" data-aos="zoom-in-left">
 				<img className="hero-image" src="main-hero-image.png" alt="hero tag" /> 
-				<img className="orange-ellipse" src="orange-ellipse.png" alt="orange ellipse" />
-				<img className="blue-ellipse" src="blue-ellipse.png" alt="blue ellipse" />
+				<div className="orange-ellipse"></div>
+				<div className="blue-ellipse"></div>
+				{/*<img className="orange-ellipse" src="orange-ellipse.png" alt="orange ellipse" />*/}
+				{/*<img className="blue-ellipse" src="blue-ellipse.png" alt="blue ellipse" />*/}
 			</div>
 
 		</div>

@@ -193,12 +193,34 @@
 
 .orange-ellipse {
 	position: absolute;
+	border-radius: 50%;
 	width: 379px;
 	height: 379px;
 	left: 31px;
 	top: 74px;
-/*	background: #F7D74E;*/
-/*	color: #eee0a5;*/
+	background: #F7D74E;
+	opacity: 0.5;
+}
+
+.blue-ellipse {
+	position: absolute;
+	border-radius: 50%;
+	width: 441px;
+	height: 441px;
+	left: 0px;
+	top: 43px;
+	background: #515AE5;
+	opacity: 0.1;
+}
+
+/*.orange-ellipse {
+	position: absolute;
+	width: 379px;
+	height: 379px;
+	left: 31px;
+	top: 74px;
+	background: #F7D74E;
+	color: #eee0a5;
 	color: #F7D74E;
 	opacity: 0.5;
 }
@@ -209,8 +231,7 @@
 	height: 441px;
 	left: 0px;
 	top: 43px;
-/*	background: #515AE5;*/
+	background: #515AE5;
 	color: #515AE5;
 	opacity: 0.1;
-}
-
+}*/
