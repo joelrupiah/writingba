@@ -22,7 +22,7 @@ const customers = [
 	},
 	{
 		id: 4,
-		name: "Mandy Rosenbabach",
+		name: "Mandy Rosenbach",
 		image: "/mandy.png",
 		description: "Mike tutored my 17 year old Junior with math and English. He is extremely knowledgeable, personable, engaging, and funny to boot!  Mike took time to understand the learning style that worked best for my daughter and where she was missing information and process so that he could help course correct and guide her to the next level. My daughter takes her education seriously and Mike was able to help her reach her goal of achieving straight A’s. I highly recommend Mike as a tutor, he did not disappoint and we are eager to work with him again through the summer and my daughter’s Senior year! Thank you Mike, you saved the semester!!",
 		rating: 5
