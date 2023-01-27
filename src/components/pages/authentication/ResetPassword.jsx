@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 const ResetPassword = () => {
     return (
         <div className='reset-password'>
-            Reset Password Page
-            <a to="/sign-in">Sign In</a>
-            <a to="/sign-up">Sign Up</a>
+            Reset Password Page<br />
+            <Link to="/sign-in">Sign In</Link><br />
+            <Link to="/sign-up">Sign Up</Link><br />
         </div>
     )
 }

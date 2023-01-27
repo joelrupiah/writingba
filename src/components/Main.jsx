@@ -23,9 +23,9 @@ const Main = () => {
 				<Routes>
 
 	            	<Route exact path='/' element={<Home />} />
-	            	<Route exact path='/sign-in' element={<SignIn />} />
-	            	<Route exact path='/sign-up' element={<SignUp />} />
-	            	<Route exact path='/reset-password' element={<ResetPassword />} />
+	            	<Route path='/sign-in' element={<SignIn />} />
+	            	<Route path='/sign-up' element={<SignUp />} />
+	            	<Route path='/reset-password' element={<ResetPassword />} />
 
 	            </Routes>
 

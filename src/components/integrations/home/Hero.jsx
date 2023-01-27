@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import './Hero.css'
 
 const Hero = () => {
@@ -21,11 +22,11 @@ const Hero = () => {
 				</div>
 
 				<div className="hero-button-section" data-aos="fade-up-right">
-					<a to="/sign-up">
+					<Link to="/sign-up">
 						<div className="hero-button">
 							Sign Up for 8500 naira only
 						</div>
-					</a>
+					</Link>
 				</div>
 
 			</div>
