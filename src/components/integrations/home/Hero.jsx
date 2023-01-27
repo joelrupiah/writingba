@@ -21,15 +21,17 @@ const Hero = () => {
 				</div>
 
 				<div className="hero-button-section" data-aos="fade-up-right">
-					<div className="hero-button">
-						Sign Up for 8500 naira only
-					</div>
+					<a to="/sign-up">
+						<div className="hero-button">
+							Sign Up for 8500 naira only
+						</div>
+					</a>
 				</div>
 
 			</div>
 
 			<div className="hero-tag" data-aos="zoom-in-left">
-				<img className="hero-image" src="main-hero-image.png" alt="hero tag" /> 
+				<img className="hero-image" src="main-hero-image.png" alt="hero tag" />
 				<div className="orange-ellipse"></div>
 				<div className="blue-ellipse"></div>
 				{/*<img className="orange-ellipse" src="orange-ellipse.png" alt="orange ellipse" />*/}
